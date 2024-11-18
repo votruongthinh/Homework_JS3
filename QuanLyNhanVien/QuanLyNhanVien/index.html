@@ -229,6 +229,7 @@
                     class="form-control input-sm"
                     placeholder="Tài khoản"
                   />
+                  <div id="invalidtknv" class="invalid-feedback"></div>
                 </div>
 
                 <span class="sp-thongbao" id="tbTKNV"></span>
@@ -248,6 +249,7 @@
                     class="form-control input-sm"
                     placeholder="Họ và tên"
                   />
+                  <div id="invalidname" class="invalid-feedback"></div>
                 </div>
                 <span class="sp-thongbao" id="tbTen"></span>
               </div>
@@ -266,6 +268,7 @@
                     class="form-control input-sm"
                     placeholder="Email"
                   />
+                  <div id="invalidemail" class="invalid-feedback"></div>
                 </div>
 
                 <span class="sp-thongbao" id="tbEmail"></span>
@@ -285,6 +288,7 @@
                     class="form-control input-sm"
                     placeholder="Mật khẩu"
                   />
+                  <div id="invalidpassword" class="invalid-feedback"></div>
                 </div>
                 <span class="sp-thongbao" id="tbMatKhau"></span>
               </div>
@@ -303,6 +307,7 @@
                     class="form-control"
                     placeholder="Ngày làm"
                   />
+                  <div id="invalidngay" class="invalid-feedback"></div>
                 </div>
 
                 <span class="sp-thongbao" id="tbNgay"></span>
@@ -322,6 +327,7 @@
                     class="form-control input-sm"
                     placeholder="Lương cơ bản"
                   />
+                  <div id="invalidluong" class="invalid-feedback"></div>
                 </div>
                 <span class="sp-thongbao" id="tbLuongCB"></span>
               </div>
@@ -338,6 +344,7 @@
                     <option>Trưởng phòng</option>
                     <option>Nhân viên</option>
                   </select>
+                  <div id="invalidchucvu" class="invalid-feedback"></div>
                 </div>
 
                 <span class="sp-thongbao" id="tbChucVu"></span>
@@ -356,6 +363,7 @@
                     class="form-control input-sm"
                     placeholder="Giờ làm"
                   />
+                  <div id="invalidgiolam" class="invalid-feedback"></div>
                 </div>
                 <span class="sp-thongbao" id="tbGiolam"></span>
               </div>
@@ -367,7 +375,14 @@
             <button id="btnThemNV" form="formNV" class="btn btn-success">
               Thêm người dùng
             </button>
-
+            <button
+              id="btnCapNhatNV"
+              style="display: none"
+              form="formNV"
+              class="btn btn-success"
+            >
+              Cập Nhật
+            </button>
             <button
               id="btnDong"
               type="button"
